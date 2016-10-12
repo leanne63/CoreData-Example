@@ -105,7 +105,7 @@
 				D531C3291DAC502300ECE56A /* Assets.xcassets */,
 				D531C32B1DAC502300ECE56A /* LaunchScreen.storyboard */,
 				D531C32E1DAC502300ECE56A /* Info.plist */,
-				D531C3261DAC502300ECE56A /* _TEST_CoreData.xcdatamodeld */,
+				D531C35C1DAEF51B00ECE56A /* Model */,
 			);
 			path = _TEST_CoreData;
 			sourceTree = "<group>";
@@ -126,6 +126,14 @@
 				D531C3441DAC502300ECE56A /* Info.plist */,
 			);
 			path = _TEST_CoreDataUITests;
+			sourceTree = "<group>";
+		};
+		D531C35C1DAEF51B00ECE56A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D531C3261DAC502300ECE56A /* _TEST_CoreData.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,6 +526,7 @@
 				D531C3491DAC502300ECE56A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D531C34A1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "_TEST_CoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +535,7 @@
 				D531C34C1DAC502300ECE56A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D531C34D1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "_TEST_CoreDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +544,7 @@
 				D531C34F1DAC502300ECE56A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
