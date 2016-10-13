@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		
+		dropAllData()
+		preloadData()
+		
 		return true
 	}
 
@@ -87,6 +90,144 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
 	        }
 	    }
+	}
+	
+	// MARK: - Custom Funcs
+	
+	func preloadData() {
+		// preload some managed objects (country.code, manufacturer.name, product.name, price, weight)
+		let backgroundContext = persistentContainer.newBackgroundContext()
+		
+		// COUNTRIES
+		guard let countryEntity = NSEntityDescription.entity(forEntityName: "Country", in: backgroundContext) else {
+			print("countryEntity creation failed!")
+			return
+		}
+		let china = Country(entity: countryEntity, insertInto: backgroundContext)
+		let usa = Country(entity: countryEntity, insertInto: backgroundContext)
+		let mexico = Country(entity: countryEntity, insertInto: backgroundContext)
+		
+		china.code = "cn"
+		usa.code = "us"
+		mexico.code = "mx"
+		
+		// MANUFACTURERS
+		guard let mfrEntity = NSEntityDescription.entity(forEntityName: "Manufacturer", in: backgroundContext) else {
+			print("mfrEntity creation failed!")
+			return
+		}
+		let nike = Manufacturer(entity: mfrEntity, insertInto: backgroundContext)
+		let blackndecker = Manufacturer(entity: mfrEntity, insertInto: backgroundContext)
+		let kenmore = Manufacturer(entity: mfrEntity, insertInto: backgroundContext)
+		
+		nike.name = "Nike"
+		nike.country = china
+		
+		blackndecker.name = "Black and Decker"
+		blackndecker.country = mexico
+		
+		kenmore.name = "Kenmore"
+		kenmore.country = china
+		
+		// PRODUCTS
+		guard let productEntity = NSEntityDescription.entity(forEntityName: "Product", in: backgroundContext) else {
+			print("productEntity creation failed!")
+			return
+		}
+		let gymshoe = Product(entity: productEntity, insertInto: backgroundContext)
+		let tshirt = Product(entity: productEntity, insertInto: backgroundContext)
+		let headband = Product(entity: productEntity, insertInto: backgroundContext)
+		
+		let hammer = Product(entity: productEntity, insertInto: backgroundContext)
+		let drill = Product(entity: productEntity, insertInto: backgroundContext)
+		let screwdriver = Product(entity: productEntity, insertInto: backgroundContext)
+		
+		let washingmachine = Product(entity: productEntity, insertInto: backgroundContext)
+		let dryer = Product(entity: productEntity, insertInto: backgroundContext)
+		let repairpart = Product(entity: productEntity, insertInto: backgroundContext)
+		
+		gymshoe.manufacturer = nike
+		gymshoe.name = "Gym Shoe"
+		gymshoe.price = 120.00
+		gymshoe.weight = 3.5
+		
+		tshirt.manufacturer = nike
+		tshirt.name = "T-Shirt"
+		tshirt.price = 15.00
+		tshirt.weight = 1.00
+		
+		headband.manufacturer = nike
+		headband.name = "Headband"
+		headband.price = 1.50
+		headband.weight = 0.25
+		
+		hammer.manufacturer = blackndecker
+		hammer.name = "Hammer"
+		hammer.price = 1.25
+		hammer.weight = 2.5
+		
+		drill.manufacturer = blackndecker
+		drill.name = "Drill"
+		drill.price = 35.00
+		drill.weight = 10.00
+		
+		screwdriver.manufacturer = blackndecker
+		screwdriver.name = "Screwdriver, Flathead"
+		screwdriver.price = 1.75
+		screwdriver.weight = 0.75
+		
+		washingmachine.manufacturer = kenmore
+		washingmachine.name = "Washing Machine"
+		washingmachine.price = 200.00
+		washingmachine.weight = 100.00
+		
+		dryer.manufacturer = kenmore
+		dryer.name = "Dryer"
+		dryer.price = 200.00
+		dryer.weight = 100.00
+		
+		repairpart.manufacturer = kenmore
+		repairpart.name = "Belt, Washer Motor"
+		repairpart.price = 1.75
+		repairpart.weight = 0.5
+		
+		do {
+			try backgroundContext.save()
+			
+		} catch {
+			print("***** UNABLE TO SAVE BACKGROUND CONTEXT: \(error)\n*****")
+		}
+
+		saveContext()
+	}
+	
+	func dropAllData() {
+		
+		let storeCoordinator = persistentContainer.persistentStoreCoordinator
+		let storeDescription = persistentContainer.persistentStoreDescriptions[0]
+		guard let storeURL = storeDescription.url else {
+			print("***** Unable to retrieve store URL! *****")
+			return
+		}
+		
+		print("***** STORE URL:\n\(storeURL)\n*****")
+		
+		do {
+			try storeCoordinator.destroyPersistentStore(at: storeURL, ofType: NSSQLiteStoreType, options: nil)
+		}
+		catch {
+			print("***** Drop all data failed! *****")
+			return
+		}
+		
+		storeCoordinator.addPersistentStore(with: storeDescription) {
+			(persistentStoreCoordinator, error) in
+			
+			// what to do if an error occurs???
+			if let error = error {
+				print("***** An error occurred re-adding the persistent store:\n\(error)\n*****")
+			}
+		}
 	}
 
 }
