@@ -61,6 +61,7 @@
 		D531C3751DB4044C00ECE56A /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D531C3761DB4044C00ECE56A /* Manufacturer+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manufacturer+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D531C3771DB4044C00ECE56A /* Manufacturer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manufacturer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D531C37E1DB4153B00ECE56A /* _TEST_CoreData2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _TEST_CoreData2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -600,9 +601,10 @@
 		D531C3261DAC502300ECE56A /* _TEST_CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				D531C37E1DB4153B00ECE56A /* _TEST_CoreData2.xcdatamodel */,
 				D531C3271DAC502300ECE56A /* _TEST_CoreData.xcdatamodel */,
 			);
-			currentVersion = D531C3271DAC502300ECE56A /* _TEST_CoreData.xcdatamodel */;
+			currentVersion = D531C37E1DB4153B00ECE56A /* _TEST_CoreData2.xcdatamodel */;
 			path = _TEST_CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

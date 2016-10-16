@@ -22,7 +22,7 @@
             <fetchRequest name="fetchedPropertyFetchRequest" entity="Product" predicateString="price &lt; 1.00"/>
         </fetchedProperty>
     </entity>
-    <fetchRequest name="CheapProductsFromCountry" entity="Product" predicateString="price &lt; $PRICE AND country.code == $COUNTRY_CD" includePropertyValues="YES"/>
+    <fetchRequest name="CheapProductsFromCountry" entity="Product" predicateString="price &lt; $PRICE AND manufacturer.country.code == $COUNTRY_CD" includePropertyValues="YES"/>
     <elements>
         <element name="Country" positionX="81" positionY="-90" width="128" height="88"/>
         <element name="Manufacturer" positionX="-126" positionY="-18" width="128" height="90"/>
