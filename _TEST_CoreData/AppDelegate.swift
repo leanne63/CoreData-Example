@@ -107,9 +107,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let usa = Country(entity: countryEntity, insertInto: backgroundContext)
 		let mexico = Country(entity: countryEntity, insertInto: backgroundContext)
 		
-		china.code = "cn"
-		usa.code = "us"
-		mexico.code = "mx"
+		china.code = "CN"
+		china.name = "China"
+		usa.code = "US"
+		usa.name = "United States of America"
+		mexico.code = "MX"
+		mexico.name = "Mexico"
 		
 		// MANUFACTURERS
 		guard let mfrEntity = NSEntityDescription.entity(forEntityName: "Manufacturer", in: backgroundContext) else {
