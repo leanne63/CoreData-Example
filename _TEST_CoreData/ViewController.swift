@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 			                               substitutionVariables: ["PRICE": 20.00, "COUNTRY_CD": "CN"])
 		as! NSFetchRequest<Product>
 		
-		// perform fetch based on request
+		// perform fetch based on template request
 		guard let cheapProductsFromCountry: [Product] = try? mainContext.fetch(cheapProductsFromCountryRequest) else {
 			print("***** Unable to retrieve Products From Country list *****")
 			return
