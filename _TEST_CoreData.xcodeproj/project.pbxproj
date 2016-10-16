@@ -15,12 +15,12 @@
 		D531C32D1DAC502300ECE56A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D531C32B1DAC502300ECE56A /* LaunchScreen.storyboard */; };
 		D531C3381DAC502300ECE56A /* _TEST_CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3371DAC502300ECE56A /* _TEST_CoreDataTests.swift */; };
 		D531C3431DAC502300ECE56A /* _TEST_CoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3421DAC502300ECE56A /* _TEST_CoreDataUITests.swift */; };
-		D531C3631DAF0A0400ECE56A /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C35D1DAF0A0400ECE56A /* Country+CoreDataClass.swift */; };
-		D531C3641DAF0A0400ECE56A /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C35E1DAF0A0400ECE56A /* Country+CoreDataProperties.swift */; };
-		D531C3651DAF0A0400ECE56A /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C35F1DAF0A0400ECE56A /* Product+CoreDataClass.swift */; };
-		D531C3661DAF0A0400ECE56A /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3601DAF0A0400ECE56A /* Product+CoreDataProperties.swift */; };
-		D531C3671DAF0A0400ECE56A /* Manufacturer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3611DAF0A0400ECE56A /* Manufacturer+CoreDataClass.swift */; };
-		D531C3681DAF0A0400ECE56A /* Manufacturer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3621DAF0A0400ECE56A /* Manufacturer+CoreDataProperties.swift */; };
+		D531C3781DB4044C00ECE56A /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3721DB4044C00ECE56A /* Product+CoreDataClass.swift */; };
+		D531C3791DB4044C00ECE56A /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3731DB4044C00ECE56A /* Product+CoreDataProperties.swift */; };
+		D531C37A1DB4044C00ECE56A /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3741DB4044C00ECE56A /* Country+CoreDataClass.swift */; };
+		D531C37B1DB4044C00ECE56A /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3751DB4044C00ECE56A /* Country+CoreDataProperties.swift */; };
+		D531C37C1DB4044C00ECE56A /* Manufacturer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3761DB4044C00ECE56A /* Manufacturer+CoreDataClass.swift */; };
+		D531C37D1DB4044C00ECE56A /* Manufacturer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3771DB4044C00ECE56A /* Manufacturer+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +55,12 @@
 		D531C33E1DAC502300ECE56A /* _TEST_CoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = _TEST_CoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D531C3421DAC502300ECE56A /* _TEST_CoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _TEST_CoreDataUITests.swift; sourceTree = "<group>"; };
 		D531C3441DAC502300ECE56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D531C35D1DAF0A0400ECE56A /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D531C35E1DAF0A0400ECE56A /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D531C35F1DAF0A0400ECE56A /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D531C3601DAF0A0400ECE56A /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D531C3611DAF0A0400ECE56A /* Manufacturer+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manufacturer+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D531C3621DAF0A0400ECE56A /* Manufacturer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manufacturer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D531C3721DB4044C00ECE56A /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D531C3731DB4044C00ECE56A /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D531C3741DB4044C00ECE56A /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D531C3751DB4044C00ECE56A /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D531C3761DB4044C00ECE56A /* Manufacturer+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manufacturer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D531C3771DB4044C00ECE56A /* Manufacturer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manufacturer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,12 +140,12 @@
 		D531C35C1DAEF51B00ECE56A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D531C35D1DAF0A0400ECE56A /* Country+CoreDataClass.swift */,
-				D531C35E1DAF0A0400ECE56A /* Country+CoreDataProperties.swift */,
-				D531C35F1DAF0A0400ECE56A /* Product+CoreDataClass.swift */,
-				D531C3601DAF0A0400ECE56A /* Product+CoreDataProperties.swift */,
-				D531C3611DAF0A0400ECE56A /* Manufacturer+CoreDataClass.swift */,
-				D531C3621DAF0A0400ECE56A /* Manufacturer+CoreDataProperties.swift */,
+				D531C3721DB4044C00ECE56A /* Product+CoreDataClass.swift */,
+				D531C3731DB4044C00ECE56A /* Product+CoreDataProperties.swift */,
+				D531C3741DB4044C00ECE56A /* Country+CoreDataClass.swift */,
+				D531C3751DB4044C00ECE56A /* Country+CoreDataProperties.swift */,
+				D531C3761DB4044C00ECE56A /* Manufacturer+CoreDataClass.swift */,
+				D531C3771DB4044C00ECE56A /* Manufacturer+CoreDataProperties.swift */,
 				D531C3261DAC502300ECE56A /* _TEST_CoreData.xcdatamodeld */,
 			);
 			name = Model;
@@ -315,15 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D531C3671DAF0A0400ECE56A /* Manufacturer+CoreDataClass.swift in Sources */,
-				D531C3641DAF0A0400ECE56A /* Country+CoreDataProperties.swift in Sources */,
+				D531C37C1DB4044C00ECE56A /* Manufacturer+CoreDataClass.swift in Sources */,
+				D531C3791DB4044C00ECE56A /* Product+CoreDataProperties.swift in Sources */,
 				D531C3221DAC502300ECE56A /* ViewController.swift in Sources */,
+				D531C37B1DB4044C00ECE56A /* Country+CoreDataProperties.swift in Sources */,
+				D531C37D1DB4044C00ECE56A /* Manufacturer+CoreDataProperties.swift in Sources */,
+				D531C37A1DB4044C00ECE56A /* Country+CoreDataClass.swift in Sources */,
 				D531C3281DAC502300ECE56A /* _TEST_CoreData.xcdatamodeld in Sources */,
-				D531C3681DAF0A0400ECE56A /* Manufacturer+CoreDataProperties.swift in Sources */,
-				D531C3661DAF0A0400ECE56A /* Product+CoreDataProperties.swift in Sources */,
-				D531C3631DAF0A0400ECE56A /* Country+CoreDataClass.swift in Sources */,
 				D531C3201DAC502300ECE56A /* AppDelegate.swift in Sources */,
-				D531C3651DAF0A0400ECE56A /* Product+CoreDataClass.swift in Sources */,
+				D531C3781DB4044C00ECE56A /* Product+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

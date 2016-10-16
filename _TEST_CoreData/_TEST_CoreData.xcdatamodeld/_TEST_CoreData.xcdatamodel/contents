@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Country" representedClassName=".Country" syncable="YES">
         <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="manufacturers" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Manufacturer" inverseName="country" inverseEntity="Manufacturer" syncable="YES"/>
     </entity>
     <entity name="Manufacturer" representedClassName=".Manufacturer" syncable="YES">
@@ -23,8 +24,8 @@
     </entity>
     <fetchRequest name="CheapProductsFromCountry" entity="Product" predicateString="price &lt; $PRICE AND country.code == &quot;$COUNTRY_CD&quot;" includePropertyValues="YES"/>
     <elements>
-        <element name="Manufacturer" positionX="-9" positionY="36" width="128" height="90"/>
-        <element name="Country" positionX="-9" positionY="36" width="128" height="75"/>
-        <element name="Product" positionX="0" positionY="45" width="128" height="149"/>
+        <element name="Country" positionX="81" positionY="-90" width="128" height="88"/>
+        <element name="Manufacturer" positionX="-126" positionY="-18" width="128" height="90"/>
+        <element name="Product" positionX="-353" positionY="-140" width="128" height="149"/>
     </elements>
 </model>
