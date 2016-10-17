@@ -36,9 +36,22 @@ class ViewController: UIViewController {
 		}
 		
 		// print results of fetch
-		var formattedString = ""
+		// initialize a temporary Product to hold most expensive product found
+		guard let productEntityDescription = NSEntityDescription.entity(forEntityName: "Product", in: mainContext) else {
+			print("Unable to create Product entity description!")
+			return
+		}
+		var mostExpensiveProduct: Product = NSManagedObject(entity: productEntityDescription, insertInto: nil) as! Product
+		mostExpensiveProduct.name = "Test Product"
+		// price defaults to 0 in model graph
+		
 		print("***** PRODUCTS FROM CHINA COSTING LESS THAN $20 *****")
 		for (idx, product) in cheapProductsFromCountry.enumerated() {
+			if mostExpensiveProduct.price < product.price {
+				mostExpensiveProduct = product
+			}
+			// note: in model, we could set these as not optional if we want to ensure they're there!
+			// (these values will be present in our test model)
 			if let productName = product.name, let mfrName = product.manufacturer?.name, let countryName = product.manufacturer?.country?.name {
 			
 				print("Product \(idx + 1): ", terminator: "")
@@ -49,8 +62,7 @@ class ViewController: UIViewController {
 				let priceString = "Price:\t%.2f\n"
 				
 				let fullString = nameString + mfrString + countryString + priceString
-				
-				formattedString = String(format: fullString, product.price)
+				let formattedString = String(format: fullString, product.price)
 				
 				print(formattedString)
 			}
@@ -59,7 +71,31 @@ class ViewController: UIViewController {
 		
 		// FETCHED PROPERTIES
 		
-		let cheapProducts = (cheapProductsFromCountry[0]).value(forKey: "cheapProduct") as! [Product]
+		// fetched property with replaceable parameter (using $FETCH_SOURCE, so comparing based on selected product)
+		let cheaperProducts = mostExpensiveProduct.value(forKey: "cheaperProducts") as! [Product]
+		let stringToFormat = "***** ALL PRODUCTS COSTING LESS THAN \(mostExpensiveProduct.name!) @ $%.2f *****"
+		let formattedString = String(format: stringToFormat, mostExpensiveProduct.price)
+		print(formattedString)
+		
+		for (idx, product) in cheaperProducts.enumerated() {
+			if let productName = product.name, let mfrName = product.manufacturer?.name, let countryName = product.manufacturer?.country?.name {
+				
+				print("Product \(idx + 1): ", terminator: "")
+				
+				let nameString = "\(productName)\n"
+				let mfrString = "Mfr:\t\t\(mfrName)\n"
+				let countryString = "Country:\t\(countryName)\n"
+				let priceString = "Price:\t%.2f\n"
+				
+				let fullString = nameString + mfrString + countryString + priceString
+				let formattedString = String(format: fullString, product.price)
+				
+				print(formattedString)
+			}
+		}
+		
+		// fetched property without replaceable parameter (not using $FETCH_SOURCE, so any product would return same result)
+		let cheapProducts = cheapProductsFromCountry[1].value(forKey: "cheapProducts") as! [Product]
 		print("***** ALL PRODUCTS COSTING LESS THAN $1.00 *****")
 		for (idx, product) in cheapProducts.enumerated() {
 			if let productName = product.name, let mfrName = product.manufacturer?.name, let countryName = product.manufacturer?.country?.name {
@@ -72,8 +108,7 @@ class ViewController: UIViewController {
 				let priceString = "Price:\t%.2f\n"
 				
 				let fullString = nameString + mfrString + countryString + priceString
-				
-				formattedString = String(format: fullString, product.price)
+				let formattedString = String(format: fullString, product.price)
 				
 				print(formattedString)
 			}
