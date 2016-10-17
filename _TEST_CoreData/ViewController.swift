@@ -74,8 +74,8 @@ class ViewController: UIViewController {
 		// fetched property with replaceable parameter (using $FETCH_SOURCE, so comparing based on selected product)
 		let cheaperProducts = mostExpensiveProduct.value(forKey: "cheaperProducts") as! [Product]
 		
-		let stringToFormat = "***** ALL PRODUCTS COSTING LESS THAN \(mostExpensiveProduct.name!) @ $%.2f *****"
-		let formattedString = String(format: stringToFormat, mostExpensiveProduct.price)
+		var stringToFormat = "***** ALL PRODUCTS COSTING LESS THAN \(mostExpensiveProduct.name!) @ $%.2f *****"
+		var formattedString = String(format: stringToFormat, mostExpensiveProduct.price)
 		print(formattedString)
 		
 		for (idx, product) in cheaperProducts.enumerated() {
@@ -88,8 +88,8 @@ class ViewController: UIViewController {
 				let countryString = "Country:\t\(countryName)\n"
 				let priceString = "Price:\t%.2f\n"
 				
-				let fullString = nameString + mfrString + countryString + priceString
-				let formattedString = String(format: fullString, product.price)
+				stringToFormat = nameString + mfrString + countryString + priceString
+				formattedString = String(format: stringToFormat, product.price)
 				
 				print(formattedString)
 			}
@@ -116,6 +116,34 @@ class ViewController: UIViewController {
 				print(formattedString)
 			}
 		}
+		
+		
+		// fetched property based on relationship
+		// fetched property with replaceable parameter (using $FETCH_SOURCE, so comparing based on selected product)
+		let productsFromMfr = mostExpensiveProduct.value(forKey: "allProductsFromManufacturer") as! [Product]
+		
+		stringToFormat = "***** ALL PRODUCTS MANUFACTURED BY \(mostExpensiveProduct.manufacturer!.name!) *****"
+		formattedString = String(format: stringToFormat, mostExpensiveProduct.price)
+		print(formattedString)
+		
+		for (idx, product) in productsFromMfr.enumerated() {
+			if let productName = product.name, let mfrName = product.manufacturer?.name, let countryName = product.manufacturer?.country?.name {
+				
+				print("Product \(idx + 1): ", terminator: "")
+				
+				let nameString = "\(productName)\n"
+				let mfrString = "Mfr:\t\t\(mfrName)\n"
+				let countryString = "Country:\t\(countryName)\n"
+				let priceString = "Price:\t%.2f\n"
+				
+				let fullString = nameString + mfrString + countryString + priceString
+				let formattedString = String(format: fullString, product.price)
+				
+				print(formattedString)
+			}
+		}
+		
+		print("+++++\n\(productsFromMfr)\n+++++")
 	}
 
 

@@ -15,6 +15,9 @@
         <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="manufacturer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Manufacturer" inverseName="products" inverseEntity="Manufacturer" syncable="YES"/>
+        <fetchedProperty name="allProductsFromManufacturer" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Product" predicateString="manufacturer == $FETCH_SOURCE.manufacturer"/>
+        </fetchedProperty>
         <fetchedProperty name="cheaperProducts" optional="YES" syncable="YES">
             <fetchRequest name="fetchedPropertyFetchRequest" entity="Product" predicateString="price &lt; $FETCH_SOURCE.price"/>
         </fetchedProperty>
@@ -26,6 +29,6 @@
     <elements>
         <element name="Country" positionX="81" positionY="-90" width="128" height="88"/>
         <element name="Manufacturer" positionX="-126" positionY="-18" width="128" height="90"/>
-        <element name="Product" positionX="-353" positionY="-140" width="128" height="149"/>
+        <element name="Product" positionX="-353" positionY="-140" width="128" height="161"/>
     </elements>
 </model>
