@@ -96,9 +96,12 @@ class ViewController: UIViewController {
 		}
 		
 		// fetched property without replaceable parameter (not using $FETCH_SOURCE, so any product would return same result)
-		let cheapProducts = cheapProductsFromCountry[1].value(forKey: "cheapProducts") as! [Product]
+		var cheapProducts = cheapProductsFromCountry[1].value(forKey: "cheapProducts") as! [Product]
 		
-		print("***** ALL PRODUCTS COSTING LESS THAN $1.00 *****")
+		// and sort by price (descending)
+		cheapProducts.sort { $0.price > $1.price }
+		
+		print("***** ALL PRODUCTS COSTING LESS THAN $1.00 (sorted by price, high to low) *****")
 		
 		for (idx, product) in cheapProducts.enumerated() {
 			if let productName = product.name, let mfrName = product.manufacturer?.name, let countryName = product.manufacturer?.country?.name {
@@ -120,9 +123,12 @@ class ViewController: UIViewController {
 		
 		// fetched property based on relationship
 		// fetched property with replaceable parameter (using $FETCH_SOURCE, so comparing based on selected product)
-		let productsFromMfr = mostExpensiveProduct.value(forKey: "allProductsFromManufacturer") as! [Product]
+		var productsFromMfr = mostExpensiveProduct.value(forKey: "allProductsFromManufacturer") as! [Product]
 		
-		stringToFormat = "***** ALL PRODUCTS MANUFACTURED BY \(mostExpensiveProduct.manufacturer!.name!) *****"
+		// and sort by name (ascending)
+		productsFromMfr.sort { $0.name! < $1.name! }
+		
+		stringToFormat = "***** ALL PRODUCTS MANUFACTURED BY \(mostExpensiveProduct.manufacturer!.name!) (sorted by product name, A-Z) *****"
 		formattedString = String(format: stringToFormat, mostExpensiveProduct.price)
 		print(formattedString)
 		
