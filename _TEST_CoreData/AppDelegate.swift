@@ -127,10 +127,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		nike.country = china
 		
 		blackndecker.name = "Black and Decker"
-		blackndecker.country = mexico
+		blackndecker.country = usa
 		
 		kenmore.name = "Kenmore"
-		kenmore.country = china
+		kenmore.country = mexico
 		
 		// PRODUCTS
 		guard let productEntity = NSEntityDescription.entity(forEntityName: "Product", in: backgroundContext) else {
@@ -150,7 +150,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let repairpart = Product(entity: productEntity, insertInto: backgroundContext)
 		
 		gymshoe.manufacturer = nike
-		gymshoe.name = "Gym Shoe"
+		gymshoe.name = "Gym Shoes, Pair"
 		gymshoe.price = 120.00
 		gymshoe.weight = 3.5
 		
@@ -161,7 +161,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		headband.manufacturer = nike
 		headband.name = "Headband"
-		headband.price = 1.50
+		headband.price = 0.50
 		headband.weight = 0.25
 		
 		hammer.manufacturer = blackndecker
@@ -175,8 +175,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		drill.weight = 10.00
 		
 		screwdriver.manufacturer = blackndecker
-		screwdriver.name = "Screwdriver, Flathead"
-		screwdriver.price = 1.75
+		screwdriver.name = "Screw, Hex, Pack of 50"
+		screwdriver.price = 0.75
 		screwdriver.weight = 0.75
 		
 		washingmachine.manufacturer = kenmore
