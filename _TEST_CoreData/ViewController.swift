@@ -73,6 +73,7 @@ class ViewController: UIViewController {
 		
 		// fetched property with replaceable parameter (using $FETCH_SOURCE, so comparing based on selected product)
 		let cheaperProducts = mostExpensiveProduct.value(forKey: "cheaperProducts") as! [Product]
+		
 		let stringToFormat = "***** ALL PRODUCTS COSTING LESS THAN \(mostExpensiveProduct.name!) @ $%.2f *****"
 		let formattedString = String(format: stringToFormat, mostExpensiveProduct.price)
 		print(formattedString)
@@ -96,7 +97,9 @@ class ViewController: UIViewController {
 		
 		// fetched property without replaceable parameter (not using $FETCH_SOURCE, so any product would return same result)
 		let cheapProducts = cheapProductsFromCountry[1].value(forKey: "cheapProducts") as! [Product]
+		
 		print("***** ALL PRODUCTS COSTING LESS THAN $1.00 *****")
+		
 		for (idx, product) in cheapProducts.enumerated() {
 			if let productName = product.name, let mfrName = product.manufacturer?.name, let countryName = product.manufacturer?.country?.name {
 				
