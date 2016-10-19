@@ -159,8 +159,31 @@ class ViewController: UIViewController {
 		let prodDescriptionsSet: Set<ProductDescription> = mostExpensiveProduct.productDescriptions as! Set<ProductDescription>
 		let prodDescriptionsArray: [ProductDescription] = Array(prodDescriptionsSet)
 		
-		print("+++++\nProduct description outlets for expensive product '\(mostExpensiveProduct.name!)'")
+		print("+++++\nProduct description outlets for expensive product '\(mostExpensiveProduct.name!)' via relationship:")
 		for (idx, productDescription) in prodDescriptionsArray.enumerated() {
+			print("\(productDescription.name!) Retail Outlet \(idx + 1): \(productDescription.associatedOutlet!)")
+		}
+		print("+++++")
+		
+		// whereas, using a fetched property would require that we have a product description already handy
+		//	one way to do that would seem to be to instantiate an entity, give it a value, then pull the fetched property via that entity:
+		
+		// initialize a temporary Product to hold most t-shirt product, and assign it a name
+		guard let productDescriptionEntity = NSEntityDescription.entity(forEntityName: "ProductDescription", in: mainContext) else {
+			print("Unable to create Product entity description!")
+			return
+		}
+		let tShirtProductDescription: ProductDescription =
+			NSManagedObject(entity: productDescriptionEntity, insertInto: nil) as! ProductDescription
+		tShirtProductDescription.name = "T-Shirt"
+		
+		// call the fetched property...
+		let tShirtProductDescriptionArray = tShirtProductDescription.value(forKey: "allDescriptionsForProduct") as! [ProductDescription]
+		
+		// BUT!!!! This doesn't work! We have to use an actual existing entity, so our results come out empty.
+		//	Use fetched properties, then, when we already have an entity that we'd like to use to retrieve some refined set
+		print("+++++\nProduct description outlets for product '\(tShirtProductDescription.name!)' via fetched query:")
+		for (idx, productDescription) in tShirtProductDescriptionArray.enumerated() {
 			print("\(productDescription.name!) Retail Outlet \(idx + 1): \(productDescription.associatedOutlet!)")
 		}
 		print("+++++")

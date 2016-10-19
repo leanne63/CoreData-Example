@@ -224,31 +224,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let repairpartDescription2 = ProductDescription(entity: productDescriptionEntity, insertInto: backgroundContext)
 		
 		gymshoeDescription1.name = gymshoe.name
-		gymshoeDescription1.associatedOutlet = "Amazon"
+		gymshoeDescription1.associatedOutlet = "Amazon Shoes"
 		gymshoeDescription1.product = gymshoe
 		gymshoeDescription2.name = gymshoe.name
-		gymshoeDescription2.associatedOutlet = "Walmart"
+		gymshoeDescription2.associatedOutlet = "Walmart Shoes"
 		gymshoeDescription2.product = gymshoe
 		
 		tshirtDescription1.name = tshirt.name
-		tshirtDescription1.associatedOutlet = "Amazon"
+		tshirtDescription1.associatedOutlet = "Amazon T-Shirt"
 		tshirtDescription1.product = tshirt
 		tshirtDescription2.name = tshirt.name
-		tshirtDescription2.associatedOutlet = "Walmart"
+		tshirtDescription2.associatedOutlet = "Walmart T-Shirt"
 		tshirtDescription2.product = tshirt
 		
 		headbandDescription1.name = headband.name
-		headbandDescription1.associatedOutlet = "Amazon"
+		headbandDescription1.associatedOutlet = "Amazon Headband"
 		headbandDescription1.product = headband
 		headbandDescription2.name = headband.name
-		headbandDescription2.associatedOutlet = "Walmart"
+		headbandDescription2.associatedOutlet = "Walmart Headband"
 		headbandDescription2.product = headband
 		
 		hammerDescription1.name = hammer.name
-		hammerDescription1.associatedOutlet = "Amazon"
+		hammerDescription1.associatedOutlet = "Amazon Hammer"
 		hammerDescription1.product = hammer
 		hammerDescription2.name = hammer.name
-		hammerDescription2.associatedOutlet = "Walmart"
+		hammerDescription2.associatedOutlet = "Walmart Hammer"
 		hammerDescription2.product = hammer
 		
 		drillDescription1.name = drill.name
@@ -259,31 +259,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		drillDescription2.product = drill
 		
 		screwdriverDescription1.name = screwdriver.name
-		screwdriverDescription1.associatedOutlet = "Amazon"
+		screwdriverDescription1.associatedOutlet = "Amazon Screwdriver"
 		screwdriverDescription1.product = screwdriver
 		screwdriverDescription2.name = screwdriver.name
-		screwdriverDescription2.associatedOutlet = "Walmart"
+		screwdriverDescription2.associatedOutlet = "Walmart Screwdriver"
 		screwdriverDescription2.product = screwdriver
 		
 		washingmachineDescription1.name = washingmachine.name
-		washingmachineDescription1.associatedOutlet = "Amazon"
+		washingmachineDescription1.associatedOutlet = "Amazon Washing Machine"
 		washingmachineDescription1.product = washingmachine
 		washingmachineDescription2.name = washingmachine.name
-		washingmachineDescription2.associatedOutlet = "Walmart"
+		washingmachineDescription2.associatedOutlet = "Walmart Washing Machine"
 		washingmachineDescription2.product = washingmachine
 		
 		dryerDescription1.name = dryer.name
-		dryerDescription1.associatedOutlet = "Amazon"
+		dryerDescription1.associatedOutlet = "Amazon Dryer"
 		dryerDescription1.product = dryer
 		dryerDescription2.name = dryer.name
-		dryerDescription2.associatedOutlet = "Walmart"
+		dryerDescription2.associatedOutlet = "Walmart Dryer"
 		dryerDescription2.product = dryer
 		
 		repairpartDescription1.name = repairpart.name
-		repairpartDescription1.associatedOutlet = "Amazon"
+		repairpartDescription1.associatedOutlet = "Amazon Repair Part"
 		repairpartDescription1.product = repairpart
 		repairpartDescription2.name = repairpart.name
-		repairpartDescription2.associatedOutlet = "Walmart"
+		repairpartDescription2.associatedOutlet = "Walmart Repair Part"
 		repairpartDescription2.product = repairpart
 		
 		do {
