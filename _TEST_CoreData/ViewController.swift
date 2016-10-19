@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 		let mainContext = container.viewContext
 		let model = container.managedObjectModel
 		
-		// FETCH REQUEST TEMPLATE
+		//** FETCH REQUEST TEMPLATE **//
 		
 		// create fetch request from template (duplicate type declaration just to show myself
 		//	that this is a parameterized generics typed request
@@ -70,9 +70,9 @@ class ViewController: UIViewController {
 		}
 		
 		
-		// FETCHED PROPERTIES
+		//** FETCHED PROPERTIES **//
 		
-		// fetched property with replaceable parameter (using $FETCH_SOURCE, so comparing based on selected product)
+		/* fetched property with replaceable parameter (using $FETCH_SOURCE, so comparing based on selected product) */
 		let cheaperProducts = mostExpensiveProduct.value(forKey: "cheaperProducts") as! [Product]
 		
 		var stringToFormat = "***** ALL PRODUCTS COSTING LESS THAN \(mostExpensiveProduct.name!) @ $%.2f *****"
@@ -96,7 +96,7 @@ class ViewController: UIViewController {
 			}
 		}
 		
-		// fetched property without replaceable parameter (not using $FETCH_SOURCE, so any product would return same result)
+		/* fetched property without replaceable parameter (not using $FETCH_SOURCE, so any product would return same result) */
 		var cheapProducts = cheapProductsFromCountry[1].value(forKey: "cheapProducts") as! [Product]
 		
 		// and sort by price (descending)
@@ -122,7 +122,7 @@ class ViewController: UIViewController {
 		}
 		
 		
-		// fetched property based on relationship
+		/* fetched property based on relationship (allProductsFromManufacturer: manufacturer == $FETCH_SOURCE.manufacturer) */
 		// fetched property with replaceable parameter (using $FETCH_SOURCE, so comparing based on selected product)
 		var productsFromMfr = mostExpensiveProduct.value(forKey: "allProductsFromManufacturer") as! [Product]
 		
@@ -153,9 +153,10 @@ class ViewController: UIViewController {
 		print("+++++\nproductsFromMfr - sorted:\n\(productsFromMfr)\n+++++")
 		
 		
-		// PULLING RESULTS BASED ON AN ENTITY RELATIONSHIP - retrieving product descriptions by using relationship in product
+		//** PULLING RESULTS BASED ON AN ENTITY RELATIONSHIP - retrieving product descriptions by using relationship in product **//
 		
-		// convert NSSet results from Core Data to Swift Set; then convert result to an array
+		// 'productDescriptions' is a relationship within the Product entity, so use it
+		// we'll need to convert the NSSet results from Core Data to a Swift Set; then convert that result to an array
 		let prodDescriptionsSet: Set<ProductDescription> = mostExpensiveProduct.productDescriptions as! Set<ProductDescription>
 		let prodDescriptionsArray: [ProductDescription] = Array(prodDescriptionsSet)
 		
@@ -165,10 +166,11 @@ class ViewController: UIViewController {
 		}
 		print("+++++")
 		
-		// whereas, using a fetched property would require that we have a product description already handy
+		
+		// whereas, using a fetched property would require that we have a product description already handy...
 		//	one way to do that would seem to be to instantiate an entity, give it a value, then pull the fetched property via that entity:
 		
-		// initialize a temporary Product to hold most t-shirt product, and assign it a name
+		// initialize a temporary Product to hold most t-shirt product, and assign it a name (so we know it's a t-shirt!)
 		guard let productDescriptionEntity = NSEntityDescription.entity(forEntityName: "ProductDescription", in: mainContext) else {
 			print("Unable to create Product entity description!")
 			return
