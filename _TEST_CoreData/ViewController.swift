@@ -51,6 +51,7 @@ class ViewController: UIViewController {
 				mostExpensiveProduct = product
 			}
 			// note: in model, we could set these as not optional if we want to ensure they're there!
+			//	(hmm, that may not work - after changing some items in the model to be not optional, they still show up here as optional)
 			// (these values will be present in our test model)
 			if let productName = product.name, let mfrName = product.manufacturer?.name, let countryName = product.manufacturer?.country?.name {
 			
@@ -125,7 +126,7 @@ class ViewController: UIViewController {
 		// fetched property with replaceable parameter (using $FETCH_SOURCE, so comparing based on selected product)
 		var productsFromMfr = mostExpensiveProduct.value(forKey: "allProductsFromManufacturer") as! [Product]
 		
-		// and sort by name (ascending)
+		// and sort by name (ascending, in-place sort)
 		productsFromMfr.sort { $0.name! < $1.name! }
 		
 		stringToFormat = "***** ALL PRODUCTS MANUFACTURED BY \(mostExpensiveProduct.manufacturer!.name!) (sorted by product name, A-Z) *****"
@@ -149,7 +150,20 @@ class ViewController: UIViewController {
 			}
 		}
 		
-		print("+++++\n\(productsFromMfr)\n+++++")
+		print("+++++\nproductsFromMfr - sorted:\n\(productsFromMfr)\n+++++")
+		
+		
+		// PULLING RESULTS BASED ON AN ENTITY RELATIONSHIP - retrieving product descriptions by using relationship in product
+		
+		// convert NSSet results from Core Data to Swift Set; then convert result to an array
+		let prodDescriptionsSet: Set<ProductDescription> = mostExpensiveProduct.productDescriptions as! Set<ProductDescription>
+		let prodDescriptionsArray: [ProductDescription] = Array(prodDescriptionsSet)
+		
+		print("+++++\nProduct description outlets for expensive product '\(mostExpensiveProduct.name!)'")
+		for (idx, productDescription) in prodDescriptionsArray.enumerated() {
+			print("\(productDescription.name!) Retail Outlet \(idx + 1): \(productDescription.associatedOutlet!)")
+		}
+		print("+++++")
 	}
 
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Country" representedClassName=".Country" syncable="YES">
+        <attribute name="code" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="manufacturers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Manufacturer" inverseName="country" inverseEntity="Manufacturer" syncable="YES"/>
+    </entity>
+    <entity name="Manufacturer" representedClassName=".Manufacturer" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="country" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="manufacturers" inverseEntity="Country" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Product" inverseName="manufacturer" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="Product" representedClassName=".Product" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="price" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="weight" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="manufacturer" maxCount="1" deletionRule="Nullify" destinationEntity="Manufacturer" inverseName="products" inverseEntity="Manufacturer" syncable="YES"/>
+        <relationship name="productDescriptions" toMany="YES" deletionRule="Cascade" destinationEntity="ProductDescription" inverseName="product" inverseEntity="ProductDescription" syncable="YES"/>
+        <fetchedProperty name="allProductsFromManufacturer" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Product" predicateString="manufacturer == $FETCH_SOURCE.manufacturer"/>
+        </fetchedProperty>
+        <fetchedProperty name="cheaperProducts" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Product" predicateString="price &lt; $FETCH_SOURCE.price"/>
+        </fetchedProperty>
+        <fetchedProperty name="cheapProducts" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Product" predicateString="price &lt; 1.00"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="ProductDescription" representedClassName=".ProductDescription" syncable="YES">
+        <attribute name="associatedOutlet" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="product" maxCount="1" deletionRule="Nullify" destinationEntity="Product" inverseName="productDescriptions" inverseEntity="Product" syncable="YES"/>
+        <fetchedProperty name="allDescriptionsForProduct" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="ProductDescription" predicateString="name == $FETCH_SOURCE.name"/>
+        </fetchedProperty>
+    </entity>
+    <fetchRequest name="CheapProductsFromCountry" entity="Product" predicateString="price &lt; $PRICE AND manufacturer.country.code == $COUNTRY_CD" includePropertyValues="YES"/>
+    <elements>
+        <element name="Country" positionX="81" positionY="-90" width="128" height="90"/>
+        <element name="Manufacturer" positionX="-126" positionY="-18" width="128" height="90"/>
+        <element name="Product" positionX="-353" positionY="-140" width="128" height="179"/>
+        <element name="ProductDescription" positionX="-126" positionY="-27" width="128" height="119"/>
+    </elements>
+</model>

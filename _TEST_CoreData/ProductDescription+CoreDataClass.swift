@@ -1,5 +1,5 @@
 //
-//  Manufacturer+CoreDataClass.swift
+//  ProductDescription+CoreDataClass.swift
 //  _TEST_CoreData
 //
 //  Created by leanne on 10/18/16.
@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 
-public class Manufacturer: NSManagedObject {
+public class ProductDescription: NSManagedObject {
 
 }

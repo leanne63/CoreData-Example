@@ -2,7 +2,7 @@
 //  Country+CoreDataProperties.swift
 //  _TEST_CoreData
 //
-//  Created by leanne on 10/16/16.
+//  Created by leanne on 10/18/16.
 //  Copyright © 2016 leanne63. All rights reserved.
 //
 
@@ -18,6 +18,23 @@ extension Country {
 
     @NSManaged public var code: String?
     @NSManaged public var name: String?
-    @NSManaged public var manufacturers: Manufacturer?
+    @NSManaged public var manufacturers: NSSet?
+
+}
+
+// MARK: Generated accessors for manufacturers
+extension Country {
+
+    @objc(addManufacturersObject:)
+    @NSManaged public func addToManufacturers(_ value: Manufacturer)
+
+    @objc(removeManufacturersObject:)
+    @NSManaged public func removeFromManufacturers(_ value: Manufacturer)
+
+    @objc(addManufacturers:)
+    @NSManaged public func addToManufacturers(_ values: NSSet)
+
+    @objc(removeManufacturers:)
+    @NSManaged public func removeFromManufacturers(_ values: NSSet)
 
 }
