@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:_TEST_CoreData.xcodeproj">
+      location = "self:/Users/leanne/Dev/Xcode/TEST/TEST_CoreData/TEST_CoreData.xcodeproj">
    </FileRef>
 </Workspace>

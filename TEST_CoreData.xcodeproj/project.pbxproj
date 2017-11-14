@@ -10,11 +10,11 @@
 		D531C3201DAC502300ECE56A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C31F1DAC502300ECE56A /* AppDelegate.swift */; };
 		D531C3221DAC502300ECE56A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3211DAC502300ECE56A /* ViewController.swift */; };
 		D531C3251DAC502300ECE56A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D531C3231DAC502300ECE56A /* Main.storyboard */; };
-		D531C3281DAC502300ECE56A /* _TEST_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D531C3261DAC502300ECE56A /* _TEST_CoreData.xcdatamodeld */; };
+		D531C3281DAC502300ECE56A /* TEST_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D531C3261DAC502300ECE56A /* TEST_CoreData.xcdatamodeld */; };
 		D531C32A1DAC502300ECE56A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D531C3291DAC502300ECE56A /* Assets.xcassets */; };
 		D531C32D1DAC502300ECE56A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D531C32B1DAC502300ECE56A /* LaunchScreen.storyboard */; };
-		D531C3381DAC502300ECE56A /* _TEST_CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3371DAC502300ECE56A /* _TEST_CoreDataTests.swift */; };
-		D531C3431DAC502300ECE56A /* _TEST_CoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3421DAC502300ECE56A /* _TEST_CoreDataUITests.swift */; };
+		D531C3381DAC502300ECE56A /* TEST_CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3371DAC502300ECE56A /* TEST_CoreDataTests.swift */; };
+		D531C3431DAC502300ECE56A /* TEST_CoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3421DAC502300ECE56A /* TEST_CoreDataUITests.swift */; };
 		D531C38F1DB6A56C00ECE56A /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3871DB6A56C00ECE56A /* Country+CoreDataClass.swift */; };
 		D531C3901DB6A56C00ECE56A /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3881DB6A56C00ECE56A /* Country+CoreDataProperties.swift */; };
 		D531C3911DB6A56C00ECE56A /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3891DB6A56C00ECE56A /* Product+CoreDataClass.swift */; };
@@ -43,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D531C31C1DAC502300ECE56A /* _TEST_CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = _TEST_CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D531C31C1DAC502300ECE56A /* TEST_CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEST_CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D531C31F1DAC502300ECE56A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D531C3211DAC502300ECE56A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D531C3241DAC502300ECE56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,11 +51,11 @@
 		D531C3291DAC502300ECE56A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D531C32C1DAC502300ECE56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D531C32E1DAC502300ECE56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D531C3331DAC502300ECE56A /* _TEST_CoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = _TEST_CoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D531C3371DAC502300ECE56A /* _TEST_CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _TEST_CoreDataTests.swift; sourceTree = "<group>"; };
+		D531C3331DAC502300ECE56A /* TEST_CoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEST_CoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D531C3371DAC502300ECE56A /* TEST_CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST_CoreDataTests.swift; sourceTree = "<group>"; };
 		D531C3391DAC502300ECE56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D531C33E1DAC502300ECE56A /* _TEST_CoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = _TEST_CoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D531C3421DAC502300ECE56A /* _TEST_CoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _TEST_CoreDataUITests.swift; sourceTree = "<group>"; };
+		D531C33E1DAC502300ECE56A /* TEST_CoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEST_CoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D531C3421DAC502300ECE56A /* TEST_CoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST_CoreDataUITests.swift; sourceTree = "<group>"; };
 		D531C3441DAC502300ECE56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D531C37E1DB4153B00ECE56A /* _TEST_CoreData2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _TEST_CoreData2.xcdatamodel; sourceTree = "<group>"; };
 		D531C3861DB69FC700ECE56A /* _TEST_CoreData3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _TEST_CoreData3.xcdatamodel; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 		D531C3131DAC502300ECE56A = {
 			isa = PBXGroup;
 			children = (
-				D531C31E1DAC502300ECE56A /* _TEST_CoreData */,
-				D531C3361DAC502300ECE56A /* _TEST_CoreDataTests */,
-				D531C3411DAC502300ECE56A /* _TEST_CoreDataUITests */,
+				D531C31E1DAC502300ECE56A /* TEST_CoreData */,
+				D531C3361DAC502300ECE56A /* TEST_CoreDataTests */,
+				D531C3411DAC502300ECE56A /* TEST_CoreDataUITests */,
 				D531C31D1DAC502300ECE56A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,14 +107,14 @@
 		D531C31D1DAC502300ECE56A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D531C31C1DAC502300ECE56A /* _TEST_CoreData.app */,
-				D531C3331DAC502300ECE56A /* _TEST_CoreDataTests.xctest */,
-				D531C33E1DAC502300ECE56A /* _TEST_CoreDataUITests.xctest */,
+				D531C31C1DAC502300ECE56A /* TEST_CoreData.app */,
+				D531C3331DAC502300ECE56A /* TEST_CoreDataTests.xctest */,
+				D531C33E1DAC502300ECE56A /* TEST_CoreDataUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D531C31E1DAC502300ECE56A /* _TEST_CoreData */ = {
+		D531C31E1DAC502300ECE56A /* TEST_CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				D531C3701DB2E79200ECE56A /* Supporting Files */,
@@ -122,25 +122,25 @@
 				D531C36F1DB2E78000ECE56A /* Views */,
 				D531C35C1DAEF51B00ECE56A /* Model */,
 			);
-			path = _TEST_CoreData;
+			path = TEST_CoreData;
 			sourceTree = "<group>";
 		};
-		D531C3361DAC502300ECE56A /* _TEST_CoreDataTests */ = {
+		D531C3361DAC502300ECE56A /* TEST_CoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				D531C3371DAC502300ECE56A /* _TEST_CoreDataTests.swift */,
+				D531C3371DAC502300ECE56A /* TEST_CoreDataTests.swift */,
 				D531C3391DAC502300ECE56A /* Info.plist */,
 			);
-			path = _TEST_CoreDataTests;
+			path = TEST_CoreDataTests;
 			sourceTree = "<group>";
 		};
-		D531C3411DAC502300ECE56A /* _TEST_CoreDataUITests */ = {
+		D531C3411DAC502300ECE56A /* TEST_CoreDataUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D531C3421DAC502300ECE56A /* _TEST_CoreDataUITests.swift */,
+				D531C3421DAC502300ECE56A /* TEST_CoreDataUITests.swift */,
 				D531C3441DAC502300ECE56A /* Info.plist */,
 			);
-			path = _TEST_CoreDataUITests;
+			path = TEST_CoreDataUITests;
 			sourceTree = "<group>";
 		};
 		D531C35C1DAEF51B00ECE56A /* Model */ = {
@@ -154,7 +154,7 @@
 				D531C38C1DB6A56C00ECE56A /* Manufacturer+CoreDataProperties.swift */,
 				D531C38D1DB6A56C00ECE56A /* ProductDescription+CoreDataClass.swift */,
 				D531C38E1DB6A56C00ECE56A /* ProductDescription+CoreDataProperties.swift */,
-				D531C3261DAC502300ECE56A /* _TEST_CoreData.xcdatamodeld */,
+				D531C3261DAC502300ECE56A /* TEST_CoreData.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -189,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D531C31B1DAC502300ECE56A /* _TEST_CoreData */ = {
+		D531C31B1DAC502300ECE56A /* TEST_CoreData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D531C3471DAC502300ECE56A /* Build configuration list for PBXNativeTarget "_TEST_CoreData" */;
+			buildConfigurationList = D531C3471DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreData" */;
 			buildPhases = (
 				D531C3181DAC502300ECE56A /* Sources */,
 				D531C3191DAC502300ECE56A /* Frameworks */,
@@ -201,14 +201,14 @@
 			);
 			dependencies = (
 			);
-			name = _TEST_CoreData;
+			name = TEST_CoreData;
 			productName = _TEST_CoreData;
-			productReference = D531C31C1DAC502300ECE56A /* _TEST_CoreData.app */;
+			productReference = D531C31C1DAC502300ECE56A /* TEST_CoreData.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D531C3321DAC502300ECE56A /* _TEST_CoreDataTests */ = {
+		D531C3321DAC502300ECE56A /* TEST_CoreDataTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D531C34A1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "_TEST_CoreDataTests" */;
+			buildConfigurationList = D531C34A1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreDataTests" */;
 			buildPhases = (
 				D531C32F1DAC502300ECE56A /* Sources */,
 				D531C3301DAC502300ECE56A /* Frameworks */,
@@ -219,14 +219,14 @@
 			dependencies = (
 				D531C3351DAC502300ECE56A /* PBXTargetDependency */,
 			);
-			name = _TEST_CoreDataTests;
+			name = TEST_CoreDataTests;
 			productName = _TEST_CoreDataTests;
-			productReference = D531C3331DAC502300ECE56A /* _TEST_CoreDataTests.xctest */;
+			productReference = D531C3331DAC502300ECE56A /* TEST_CoreDataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D531C33D1DAC502300ECE56A /* _TEST_CoreDataUITests */ = {
+		D531C33D1DAC502300ECE56A /* TEST_CoreDataUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D531C34D1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "_TEST_CoreDataUITests" */;
+			buildConfigurationList = D531C34D1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreDataUITests" */;
 			buildPhases = (
 				D531C33A1DAC502300ECE56A /* Sources */,
 				D531C33B1DAC502300ECE56A /* Frameworks */,
@@ -237,9 +237,9 @@
 			dependencies = (
 				D531C3401DAC502300ECE56A /* PBXTargetDependency */,
 			);
-			name = _TEST_CoreDataUITests;
+			name = TEST_CoreDataUITests;
 			productName = _TEST_CoreDataUITests;
-			productReference = D531C33E1DAC502300ECE56A /* _TEST_CoreDataUITests.xctest */;
+			productReference = D531C33E1DAC502300ECE56A /* TEST_CoreDataUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +249,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = leanne63;
 				TargetAttributes = {
 					D531C31B1DAC502300ECE56A = {
@@ -271,7 +271,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D531C3171DAC502300ECE56A /* Build configuration list for PBXProject "_TEST_CoreData" */;
+			buildConfigurationList = D531C3171DAC502300ECE56A /* Build configuration list for PBXProject "TEST_CoreData" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -284,9 +284,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D531C31B1DAC502300ECE56A /* _TEST_CoreData */,
-				D531C3321DAC502300ECE56A /* _TEST_CoreDataTests */,
-				D531C33D1DAC502300ECE56A /* _TEST_CoreDataUITests */,
+				D531C31B1DAC502300ECE56A /* TEST_CoreData */,
+				D531C3321DAC502300ECE56A /* TEST_CoreDataTests */,
+				D531C33D1DAC502300ECE56A /* TEST_CoreDataUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -327,7 +327,7 @@
 				D531C3931DB6A56C00ECE56A /* Manufacturer+CoreDataClass.swift in Sources */,
 				D531C3901DB6A56C00ECE56A /* Country+CoreDataProperties.swift in Sources */,
 				D531C3221DAC502300ECE56A /* ViewController.swift in Sources */,
-				D531C3281DAC502300ECE56A /* _TEST_CoreData.xcdatamodeld in Sources */,
+				D531C3281DAC502300ECE56A /* TEST_CoreData.xcdatamodeld in Sources */,
 				D531C3961DB6A56C00ECE56A /* ProductDescription+CoreDataProperties.swift in Sources */,
 				D531C3941DB6A56C00ECE56A /* Manufacturer+CoreDataProperties.swift in Sources */,
 				D531C3921DB6A56C00ECE56A /* Product+CoreDataProperties.swift in Sources */,
@@ -341,7 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D531C3381DAC502300ECE56A /* _TEST_CoreDataTests.swift in Sources */,
+				D531C3381DAC502300ECE56A /* TEST_CoreDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D531C3431DAC502300ECE56A /* _TEST_CoreDataUITests.swift in Sources */,
+				D531C3431DAC502300ECE56A /* TEST_CoreDataUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,12 +358,12 @@
 /* Begin PBXTargetDependency section */
 		D531C3351DAC502300ECE56A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D531C31B1DAC502300ECE56A /* _TEST_CoreData */;
+			target = D531C31B1DAC502300ECE56A /* TEST_CoreData */;
 			targetProxy = D531C3341DAC502300ECE56A /* PBXContainerItemProxy */;
 		};
 		D531C3401DAC502300ECE56A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D531C31B1DAC502300ECE56A /* _TEST_CoreData */;
+			target = D531C31B1DAC502300ECE56A /* TEST_CoreData */;
 			targetProxy = D531C33F1DAC502300ECE56A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,7 +397,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -405,7 +407,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -447,7 +454,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -455,7 +464,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -486,7 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = _TEST_CoreData/Info.plist;
+				INFOPLIST_FILE = TEST_CoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreData";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,7 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = _TEST_CoreData/Info.plist;
+				INFOPLIST_FILE = TEST_CoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreData";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,12 +527,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = _TEST_CoreDataTests/Info.plist;
+				INFOPLIST_FILE = TEST_CoreDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreDataTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/_TEST_CoreData.app/_TEST_CoreData";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEST_CoreData.app/TEST_CoreData";
 			};
 			name = Debug;
 		};
@@ -528,12 +542,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = _TEST_CoreDataTests/Info.plist;
+				INFOPLIST_FILE = TEST_CoreDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreDataTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/_TEST_CoreData.app/_TEST_CoreData";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEST_CoreData.app/TEST_CoreData";
 			};
 			name = Release;
 		};
@@ -542,12 +556,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = _TEST_CoreDataUITests/Info.plist;
+				INFOPLIST_FILE = TEST_CoreDataUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreDataUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = _TEST_CoreData;
+				TEST_TARGET_NAME = TEST_CoreData;
 			};
 			name = Debug;
 		};
@@ -556,19 +570,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = _TEST_CoreDataUITests/Info.plist;
+				INFOPLIST_FILE = TEST_CoreDataUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreDataUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = _TEST_CoreData;
+				TEST_TARGET_NAME = TEST_CoreData;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D531C3171DAC502300ECE56A /* Build configuration list for PBXProject "_TEST_CoreData" */ = {
+		D531C3171DAC502300ECE56A /* Build configuration list for PBXProject "TEST_CoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D531C3451DAC502300ECE56A /* Debug */,
@@ -577,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D531C3471DAC502300ECE56A /* Build configuration list for PBXNativeTarget "_TEST_CoreData" */ = {
+		D531C3471DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D531C3481DAC502300ECE56A /* Debug */,
@@ -586,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D531C34A1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "_TEST_CoreDataTests" */ = {
+		D531C34A1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreDataTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D531C34B1DAC502300ECE56A /* Debug */,
@@ -595,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D531C34D1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "_TEST_CoreDataUITests" */ = {
+		D531C34D1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreDataUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D531C34E1DAC502300ECE56A /* Debug */,
@@ -607,7 +621,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D531C3261DAC502300ECE56A /* _TEST_CoreData.xcdatamodeld */ = {
+		D531C3261DAC502300ECE56A /* TEST_CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				D531C3861DB69FC700ECE56A /* _TEST_CoreData3.xcdatamodel */,
@@ -615,7 +629,7 @@
 				D531C3271DAC502300ECE56A /* _TEST_CoreData.xcdatamodel */,
 			);
 			currentVersion = D531C3861DB69FC700ECE56A /* _TEST_CoreData3.xcdatamodel */;
-			path = _TEST_CoreData.xcdatamodeld;
+			path = TEST_CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
