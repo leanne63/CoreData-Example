@@ -47,7 +47,7 @@
 		D531C31F1DAC502300ECE56A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D531C3211DAC502300ECE56A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D531C3241DAC502300ECE56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D531C3271DAC502300ECE56A /* _TEST_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _TEST_CoreData.xcdatamodel; sourceTree = "<group>"; };
+		D531C3271DAC502300ECE56A /* TEST_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TEST_CoreData.xcdatamodel; sourceTree = "<group>"; };
 		D531C3291DAC502300ECE56A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D531C32C1DAC502300ECE56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D531C32E1DAC502300ECE56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,8 +57,8 @@
 		D531C33E1DAC502300ECE56A /* TEST_CoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEST_CoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D531C3421DAC502300ECE56A /* TEST_CoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST_CoreDataUITests.swift; sourceTree = "<group>"; };
 		D531C3441DAC502300ECE56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D531C37E1DB4153B00ECE56A /* _TEST_CoreData2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _TEST_CoreData2.xcdatamodel; sourceTree = "<group>"; };
-		D531C3861DB69FC700ECE56A /* _TEST_CoreData3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _TEST_CoreData3.xcdatamodel; sourceTree = "<group>"; };
+		D531C37E1DB4153B00ECE56A /* TEST_CoreData2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TEST_CoreData2.xcdatamodel; sourceTree = "<group>"; };
+		D531C3861DB69FC700ECE56A /* TEST_CoreData3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TEST_CoreData3.xcdatamodel; sourceTree = "<group>"; };
 		D531C3871DB6A56C00ECE56A /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D531C3881DB6A56C00ECE56A /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D531C3891DB6A56C00ECE56A /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -624,11 +624,11 @@
 		D531C3261DAC502300ECE56A /* TEST_CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D531C3861DB69FC700ECE56A /* _TEST_CoreData3.xcdatamodel */,
-				D531C37E1DB4153B00ECE56A /* _TEST_CoreData2.xcdatamodel */,
-				D531C3271DAC502300ECE56A /* _TEST_CoreData.xcdatamodel */,
+				D531C3861DB69FC700ECE56A /* TEST_CoreData3.xcdatamodel */,
+				D531C37E1DB4153B00ECE56A /* TEST_CoreData2.xcdatamodel */,
+				D531C3271DAC502300ECE56A /* TEST_CoreData.xcdatamodel */,
 			);
-			currentVersion = D531C3861DB69FC700ECE56A /* _TEST_CoreData3.xcdatamodel */;
+			currentVersion = D531C3861DB69FC700ECE56A /* TEST_CoreData3.xcdatamodel */;
 			path = TEST_CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
