@@ -534,7 +534,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = TEST_CoreDataTests/Info.plist;
+				INFOPLIST_FILE = "CoreData-ExampleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreDataTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,7 +550,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = TEST_CoreDataTests/Info.plist;
+				INFOPLIST_FILE = "CoreData-ExampleTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreDataTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,7 +571,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = TEST_CoreData;
+				TEST_TARGET_NAME = "CoreData-Example";
 			};
 			name = Debug;
 		};
@@ -586,7 +586,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = TEST_CoreData;
+				TEST_TARGET_NAME = "CoreData-Example";
 			};
 			name = Release;
 		};
