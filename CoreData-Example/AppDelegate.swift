@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  TEST_CoreData
+//  CoreData-Example
 //
 //  Created by leanne on 10/10/16.
 //  Copyright © 2016 leanne63. All rights reserved.
@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	     application to it. This property is optional since there are legitimate
 	     error conditions that could cause the creation of the store to fail.
 	    */
-	    let container = NSPersistentContainer(name: "TEST_CoreData")
+	    let container = NSPersistentContainer(name: "CoreData-Example")
 	    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
 	        if let error = error as NSError? {
 	            // Replace this implementation with code to handle the error appropriately.

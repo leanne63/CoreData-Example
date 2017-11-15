@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TEST_CoreData
+//  CoreData-Example
 //
 //  Created by leanne on 10/10/16.
 //  Copyright © 2016 leanne63. All rights reserved.

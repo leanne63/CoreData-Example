@@ -1,6 +1,6 @@
 //
-//  TEST_CoreDataUITests.swift
-//  TEST_CoreDataUITests
+//  CoreData-ExampleUITests.swift
+//  CoreData-ExampleUITests
 //
 //  Created by leanne on 10/10/16.
 //  Copyright © 2016 leanne63. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class TEST_CoreDataUITests: XCTestCase {
+class CoreData-ExampleUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

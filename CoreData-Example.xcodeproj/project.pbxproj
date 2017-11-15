@@ -10,11 +10,11 @@
 		D531C3201DAC502300ECE56A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C31F1DAC502300ECE56A /* AppDelegate.swift */; };
 		D531C3221DAC502300ECE56A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3211DAC502300ECE56A /* ViewController.swift */; };
 		D531C3251DAC502300ECE56A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D531C3231DAC502300ECE56A /* Main.storyboard */; };
-		D531C3281DAC502300ECE56A /* TEST_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D531C3261DAC502300ECE56A /* TEST_CoreData.xcdatamodeld */; };
+		D531C3281DAC502300ECE56A /* CoreData-Example.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D531C3261DAC502300ECE56A /* CoreData-Example.xcdatamodeld */; };
 		D531C32A1DAC502300ECE56A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D531C3291DAC502300ECE56A /* Assets.xcassets */; };
 		D531C32D1DAC502300ECE56A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D531C32B1DAC502300ECE56A /* LaunchScreen.storyboard */; };
-		D531C3381DAC502300ECE56A /* TEST_CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3371DAC502300ECE56A /* TEST_CoreDataTests.swift */; };
-		D531C3431DAC502300ECE56A /* TEST_CoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3421DAC502300ECE56A /* TEST_CoreDataUITests.swift */; };
+		D531C3381DAC502300ECE56A /* CoreData-ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3371DAC502300ECE56A /* CoreData-ExampleTests.swift */; };
+		D531C3431DAC502300ECE56A /* CoreData-ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3421DAC502300ECE56A /* CoreData-ExampleUITests.swift */; };
 		D531C38F1DB6A56C00ECE56A /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3871DB6A56C00ECE56A /* Country+CoreDataClass.swift */; };
 		D531C3901DB6A56C00ECE56A /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3881DB6A56C00ECE56A /* Country+CoreDataProperties.swift */; };
 		D531C3911DB6A56C00ECE56A /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C3891DB6A56C00ECE56A /* Product+CoreDataClass.swift */; };
@@ -43,22 +43,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D531C31C1DAC502300ECE56A /* TEST_CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEST_CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D531C31C1DAC502300ECE56A /* CoreData-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D531C31F1DAC502300ECE56A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D531C3211DAC502300ECE56A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D531C3241DAC502300ECE56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D531C3271DAC502300ECE56A /* TEST_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TEST_CoreData.xcdatamodel; sourceTree = "<group>"; };
+		D531C3271DAC502300ECE56A /* CoreData-Example.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreData-Example.xcdatamodel"; sourceTree = "<group>"; };
 		D531C3291DAC502300ECE56A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D531C32C1DAC502300ECE56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D531C32E1DAC502300ECE56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D531C3331DAC502300ECE56A /* TEST_CoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEST_CoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D531C3371DAC502300ECE56A /* TEST_CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST_CoreDataTests.swift; sourceTree = "<group>"; };
+		D531C3331DAC502300ECE56A /* CoreData-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreData-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D531C3371DAC502300ECE56A /* CoreData-ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData-ExampleTests.swift"; sourceTree = "<group>"; };
 		D531C3391DAC502300ECE56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D531C33E1DAC502300ECE56A /* TEST_CoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEST_CoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D531C3421DAC502300ECE56A /* TEST_CoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEST_CoreDataUITests.swift; sourceTree = "<group>"; };
+		D531C33E1DAC502300ECE56A /* CoreData-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreData-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D531C3421DAC502300ECE56A /* CoreData-ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData-ExampleUITests.swift"; sourceTree = "<group>"; };
 		D531C3441DAC502300ECE56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D531C37E1DB4153B00ECE56A /* TEST_CoreData2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TEST_CoreData2.xcdatamodel; sourceTree = "<group>"; };
-		D531C3861DB69FC700ECE56A /* TEST_CoreData3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TEST_CoreData3.xcdatamodel; sourceTree = "<group>"; };
+		D531C37E1DB4153B00ECE56A /* CoreData-Example2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreData-Example2.xcdatamodel"; sourceTree = "<group>"; };
+		D531C3861DB69FC700ECE56A /* CoreData-Example3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreData-Example3.xcdatamodel"; sourceTree = "<group>"; };
 		D531C3871DB6A56C00ECE56A /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D531C3881DB6A56C00ECE56A /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D531C3891DB6A56C00ECE56A /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 		D531C3131DAC502300ECE56A = {
 			isa = PBXGroup;
 			children = (
-				D531C31E1DAC502300ECE56A /* TEST_CoreData */,
-				D531C3361DAC502300ECE56A /* TEST_CoreDataTests */,
-				D531C3411DAC502300ECE56A /* TEST_CoreDataUITests */,
+				D531C31E1DAC502300ECE56A /* CoreData-Example */,
+				D531C3361DAC502300ECE56A /* CoreData-ExampleTests */,
+				D531C3411DAC502300ECE56A /* CoreData-ExampleUITests */,
 				D531C31D1DAC502300ECE56A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,14 +107,14 @@
 		D531C31D1DAC502300ECE56A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D531C31C1DAC502300ECE56A /* TEST_CoreData.app */,
-				D531C3331DAC502300ECE56A /* TEST_CoreDataTests.xctest */,
-				D531C33E1DAC502300ECE56A /* TEST_CoreDataUITests.xctest */,
+				D531C31C1DAC502300ECE56A /* CoreData-Example.app */,
+				D531C3331DAC502300ECE56A /* CoreData-ExampleTests.xctest */,
+				D531C33E1DAC502300ECE56A /* CoreData-ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D531C31E1DAC502300ECE56A /* TEST_CoreData */ = {
+		D531C31E1DAC502300ECE56A /* CoreData-Example */ = {
 			isa = PBXGroup;
 			children = (
 				D531C3701DB2E79200ECE56A /* Supporting Files */,
@@ -122,25 +122,25 @@
 				D531C36F1DB2E78000ECE56A /* Views */,
 				D531C35C1DAEF51B00ECE56A /* Model */,
 			);
-			path = TEST_CoreData;
+			path = "CoreData-Example";
 			sourceTree = "<group>";
 		};
-		D531C3361DAC502300ECE56A /* TEST_CoreDataTests */ = {
+		D531C3361DAC502300ECE56A /* CoreData-ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				D531C3371DAC502300ECE56A /* TEST_CoreDataTests.swift */,
+				D531C3371DAC502300ECE56A /* CoreData-ExampleTests.swift */,
 				D531C3391DAC502300ECE56A /* Info.plist */,
 			);
-			path = TEST_CoreDataTests;
+			path = "CoreData-ExampleTests";
 			sourceTree = "<group>";
 		};
-		D531C3411DAC502300ECE56A /* TEST_CoreDataUITests */ = {
+		D531C3411DAC502300ECE56A /* CoreData-ExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D531C3421DAC502300ECE56A /* TEST_CoreDataUITests.swift */,
+				D531C3421DAC502300ECE56A /* CoreData-ExampleUITests.swift */,
 				D531C3441DAC502300ECE56A /* Info.plist */,
 			);
-			path = TEST_CoreDataUITests;
+			path = "CoreData-ExampleUITests";
 			sourceTree = "<group>";
 		};
 		D531C35C1DAEF51B00ECE56A /* Model */ = {
@@ -154,7 +154,7 @@
 				D531C38C1DB6A56C00ECE56A /* Manufacturer+CoreDataProperties.swift */,
 				D531C38D1DB6A56C00ECE56A /* ProductDescription+CoreDataClass.swift */,
 				D531C38E1DB6A56C00ECE56A /* ProductDescription+CoreDataProperties.swift */,
-				D531C3261DAC502300ECE56A /* TEST_CoreData.xcdatamodeld */,
+				D531C3261DAC502300ECE56A /* CoreData-Example.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -189,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D531C31B1DAC502300ECE56A /* TEST_CoreData */ = {
+		D531C31B1DAC502300ECE56A /* CoreData-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D531C3471DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreData" */;
+			buildConfigurationList = D531C3471DAC502300ECE56A /* Build configuration list for PBXNativeTarget "CoreData-Example" */;
 			buildPhases = (
 				D531C3181DAC502300ECE56A /* Sources */,
 				D531C3191DAC502300ECE56A /* Frameworks */,
@@ -201,14 +201,14 @@
 			);
 			dependencies = (
 			);
-			name = TEST_CoreData;
+			name = "CoreData-Example";
 			productName = _TEST_CoreData;
-			productReference = D531C31C1DAC502300ECE56A /* TEST_CoreData.app */;
+			productReference = D531C31C1DAC502300ECE56A /* CoreData-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D531C3321DAC502300ECE56A /* TEST_CoreDataTests */ = {
+		D531C3321DAC502300ECE56A /* CoreData-ExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D531C34A1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreDataTests" */;
+			buildConfigurationList = D531C34A1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "CoreData-ExampleTests" */;
 			buildPhases = (
 				D531C32F1DAC502300ECE56A /* Sources */,
 				D531C3301DAC502300ECE56A /* Frameworks */,
@@ -219,14 +219,14 @@
 			dependencies = (
 				D531C3351DAC502300ECE56A /* PBXTargetDependency */,
 			);
-			name = TEST_CoreDataTests;
+			name = "CoreData-ExampleTests";
 			productName = _TEST_CoreDataTests;
-			productReference = D531C3331DAC502300ECE56A /* TEST_CoreDataTests.xctest */;
+			productReference = D531C3331DAC502300ECE56A /* CoreData-ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D531C33D1DAC502300ECE56A /* TEST_CoreDataUITests */ = {
+		D531C33D1DAC502300ECE56A /* CoreData-ExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D531C34D1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreDataUITests" */;
+			buildConfigurationList = D531C34D1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "CoreData-ExampleUITests" */;
 			buildPhases = (
 				D531C33A1DAC502300ECE56A /* Sources */,
 				D531C33B1DAC502300ECE56A /* Frameworks */,
@@ -237,9 +237,9 @@
 			dependencies = (
 				D531C3401DAC502300ECE56A /* PBXTargetDependency */,
 			);
-			name = TEST_CoreDataUITests;
+			name = "CoreData-ExampleUITests";
 			productName = _TEST_CoreDataUITests;
-			productReference = D531C33E1DAC502300ECE56A /* TEST_CoreDataUITests.xctest */;
+			productReference = D531C33E1DAC502300ECE56A /* CoreData-ExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -274,7 +274,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D531C3171DAC502300ECE56A /* Build configuration list for PBXProject "TEST_CoreData" */;
+			buildConfigurationList = D531C3171DAC502300ECE56A /* Build configuration list for PBXProject "CoreData-Example" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -287,9 +287,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D531C31B1DAC502300ECE56A /* TEST_CoreData */,
-				D531C3321DAC502300ECE56A /* TEST_CoreDataTests */,
-				D531C33D1DAC502300ECE56A /* TEST_CoreDataUITests */,
+				D531C31B1DAC502300ECE56A /* CoreData-Example */,
+				D531C3321DAC502300ECE56A /* CoreData-ExampleTests */,
+				D531C33D1DAC502300ECE56A /* CoreData-ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,7 +330,7 @@
 				D531C3931DB6A56C00ECE56A /* Manufacturer+CoreDataClass.swift in Sources */,
 				D531C3901DB6A56C00ECE56A /* Country+CoreDataProperties.swift in Sources */,
 				D531C3221DAC502300ECE56A /* ViewController.swift in Sources */,
-				D531C3281DAC502300ECE56A /* TEST_CoreData.xcdatamodeld in Sources */,
+				D531C3281DAC502300ECE56A /* CoreData-Example.xcdatamodeld in Sources */,
 				D531C3961DB6A56C00ECE56A /* ProductDescription+CoreDataProperties.swift in Sources */,
 				D531C3941DB6A56C00ECE56A /* Manufacturer+CoreDataProperties.swift in Sources */,
 				D531C3921DB6A56C00ECE56A /* Product+CoreDataProperties.swift in Sources */,
@@ -344,7 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D531C3381DAC502300ECE56A /* TEST_CoreDataTests.swift in Sources */,
+				D531C3381DAC502300ECE56A /* CoreData-ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D531C3431DAC502300ECE56A /* TEST_CoreDataUITests.swift in Sources */,
+				D531C3431DAC502300ECE56A /* CoreData-ExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,12 +361,12 @@
 /* Begin PBXTargetDependency section */
 		D531C3351DAC502300ECE56A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D531C31B1DAC502300ECE56A /* TEST_CoreData */;
+			target = D531C31B1DAC502300ECE56A /* CoreData-Example */;
 			targetProxy = D531C3341DAC502300ECE56A /* PBXContainerItemProxy */;
 		};
 		D531C3401DAC502300ECE56A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D531C31B1DAC502300ECE56A /* TEST_CoreData */;
+			target = D531C31B1DAC502300ECE56A /* CoreData-Example */;
 			targetProxy = D531C33F1DAC502300ECE56A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -505,9 +505,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = TEST_CoreData/Info.plist;
+				INFOPLIST_FILE = "CoreData-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreData";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.CoreData-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -519,9 +519,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = TEST_CoreData/Info.plist;
+				INFOPLIST_FILE = "CoreData-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreData";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.CoreData-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -540,7 +540,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEST_CoreData.app/TEST_CoreData";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreData-Example.app/CoreData-Example";
 			};
 			name = Debug;
 		};
@@ -556,7 +556,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEST_CoreData.app/TEST_CoreData";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreData-Example.app/CoreData-Example";
 			};
 			name = Release;
 		};
@@ -565,9 +565,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = TEST_CoreDataUITests/Info.plist;
+				INFOPLIST_FILE = "CoreData-ExampleUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreDataUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.CoreData-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -580,9 +580,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = T3V4Z3867Q;
-				INFOPLIST_FILE = TEST_CoreDataUITests/Info.plist;
+				INFOPLIST_FILE = "CoreData-ExampleUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.-TEST-CoreDataUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leanne63.CoreData-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -593,7 +593,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D531C3171DAC502300ECE56A /* Build configuration list for PBXProject "TEST_CoreData" */ = {
+		D531C3171DAC502300ECE56A /* Build configuration list for PBXProject "CoreData-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D531C3451DAC502300ECE56A /* Debug */,
@@ -602,7 +602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D531C3471DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreData" */ = {
+		D531C3471DAC502300ECE56A /* Build configuration list for PBXNativeTarget "CoreData-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D531C3481DAC502300ECE56A /* Debug */,
@@ -611,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D531C34A1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreDataTests" */ = {
+		D531C34A1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "CoreData-ExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D531C34B1DAC502300ECE56A /* Debug */,
@@ -620,7 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D531C34D1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "TEST_CoreDataUITests" */ = {
+		D531C34D1DAC502300ECE56A /* Build configuration list for PBXNativeTarget "CoreData-ExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D531C34E1DAC502300ECE56A /* Debug */,
@@ -632,15 +632,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D531C3261DAC502300ECE56A /* TEST_CoreData.xcdatamodeld */ = {
+		D531C3261DAC502300ECE56A /* CoreData-Example.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D531C3861DB69FC700ECE56A /* TEST_CoreData3.xcdatamodel */,
-				D531C37E1DB4153B00ECE56A /* TEST_CoreData2.xcdatamodel */,
-				D531C3271DAC502300ECE56A /* TEST_CoreData.xcdatamodel */,
+				D531C3861DB69FC700ECE56A /* CoreData-Example3.xcdatamodel */,
+				D531C37E1DB4153B00ECE56A /* CoreData-Example2.xcdatamodel */,
+				D531C3271DAC502300ECE56A /* CoreData-Example.xcdatamodel */,
 			);
-			currentVersion = D531C3861DB69FC700ECE56A /* TEST_CoreData3.xcdatamodel */;
-			path = TEST_CoreData.xcdatamodeld;
+			currentVersion = D531C3861DB69FC700ECE56A /* CoreData-Example3.xcdatamodel */;
+			path = "CoreData-Example.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
