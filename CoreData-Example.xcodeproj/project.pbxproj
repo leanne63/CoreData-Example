@@ -23,6 +23,7 @@
 		D531C3941DB6A56C00ECE56A /* Manufacturer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C38C1DB6A56C00ECE56A /* Manufacturer+CoreDataProperties.swift */; };
 		D531C3951DB6A56C00ECE56A /* ProductDescription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C38D1DB6A56C00ECE56A /* ProductDescription+CoreDataClass.swift */; };
 		D531C3961DB6A56C00ECE56A /* ProductDescription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D531C38E1DB6A56C00ECE56A /* ProductDescription+CoreDataProperties.swift */; };
+		D55F6ADB1FBCCB1200EF50A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D55F6ADA1FBCCB1200EF50A3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D531C38C1DB6A56C00ECE56A /* Manufacturer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manufacturer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D531C38D1DB6A56C00ECE56A /* ProductDescription+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductDescription+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D531C38E1DB6A56C00ECE56A /* ProductDescription+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductDescription+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D55F6ADA1FBCCB1200EF50A3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		D531C31E1DAC502300ECE56A /* CoreData-Example */ = {
 			isa = PBXGroup;
 			children = (
+				D55F6ADA1FBCCB1200EF50A3 /* README.md */,
 				D531C3701DB2E79200ECE56A /* Supporting Files */,
 				D531C3711DB2E7A500ECE56A /* Controllers */,
 				D531C36F1DB2E78000ECE56A /* Views */,
@@ -301,6 +304,7 @@
 			files = (
 				D531C32D1DAC502300ECE56A /* LaunchScreen.storyboard in Resources */,
 				D531C32A1DAC502300ECE56A /* Assets.xcassets in Resources */,
+				D55F6ADB1FBCCB1200EF50A3 /* README.md in Resources */,
 				D531C3251DAC502300ECE56A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
